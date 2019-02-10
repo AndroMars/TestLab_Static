@@ -1,0 +1,13 @@
+.bgimg{
+    background-image: url(../img/wolken3.JPG);
+    background-position: center center;
+    background-size: cover;
+    min-height: 12.5rem;
+}
+header h1{
+    color:#fff;
+    padding-top:0.9375rem;
+}
+.mantel{
+    padding-top:0.9375rem;
+}

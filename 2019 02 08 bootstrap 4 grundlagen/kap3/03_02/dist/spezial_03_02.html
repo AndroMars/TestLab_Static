@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Spezialklassen</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/meins5.css">
+    <link rel="stylesheet" href="font-awesome-4.6.1/css/font-awesome.min.css">
+   
+    
+   
+  </head>
+  <body>
+       
+       
+     
+       <section id="cover">
+          <div id="titelzeile">
+           <div class="container">
+               <div class="col-sm-10 col-sm-offset-1">
+          
+                <h1 class="display-3">Die Welt von Bootstrap 4</h1>
+                <p>Bootstrap 4 ist ähnlich wie Bootstrap 3 - nur eben cooler. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit a dolor error magni blanditiis suscipit modi, hic ullam quis natus praesentium alias autem, quasi porro. Ab at, expedita impedit doloribus!</p> 
+                 </div>
+                 
+              </div>
+            
+          </div> 
+           
+       </section>
+       <nav class="navbar navbar-full navbar-fixed-top navbar-dark bg-inverse" id="mainnavi">
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+    &#9776;
+  </button>
+  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+    <a class="navbar-brand" href="#">Bootstrap</a>
+    <ul class="nav navbar-nav pull-xs-right">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"href="#karten" >Karten</a>
+          
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#tab">Tabelle</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#responsive">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+       
+       
+       
+     <section id="karten" class="hidden-print">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                 <div class="card">
+                     <div class="card-block">
+                         <h4 class="card-title font-weight-bold">Wald</h4>
+                         <h6 class="card-subtitle text-muted">Ich bin ein Untertitel</h6>
+                     </div>
+                     <img src="img/wald_kl.JPG" alt="wald" class="img-rounded">
+                     <div class="card-block">
+                         <p class="card-text">Das ist nur ein kurzer Text damit hier etwas steht</p>
+                         <button type="button" class="btn btn-success-outline"><i class="fa fa-tree" aria-hidden="true"></i></button>
+                     </div>
+                 </div>
+                                 
+                </div>
+                  <div class="col-sm-6 col-md-3">
+                 <div class="card">
+                     <div class="card-block">
+                         <h4 class="card-title font-italic">Blume</h4>
+                         <h6 class="card-subtitle text-muted">Ich bin ein Untertitel</h6>
+                     </div>
+                     <img src="img/primel4_kl.JPG" alt="blume" class="img-circle" >
+                     <div class="card-block">
+                         <p class="card-text">Das ist nur ein kurzer Text damit hier etwas steht</p>
+                         <div class="collapse" id="klappe">
+                             <p>Ich bin Text, der sich nur zeigt, wenn auf "mehr" gedrückt wird</p>
+                         </div>
+                         <button type="button" class="btn btn-success-outline" data-toggle="collapse" data-target="#klappe" aria-expanded="false" aria-controls="klappe">mehr</button>
+                         
+                     </div>
+                 </div>
+                                 
+                </div>
+                  <div class="col-sm-6 col-md-3">
+                 <div class="card">
+                     <div class="card-block">
+                         <h4 class="card-title text-info">Berg</h4>
+                         <h6 class="card-subtitle text-muted">Ich bin ein Untertitel</h6>
+                     </div>
+                     <img src="img/ramsau1_kl.JPG" alt="berg" class="img-thumbnail">
+                     <div class="card-block">
+                         <p class="card-text">Das ist nur ein kurzer Text damit hier etwas steht</p>
+                         <a class="btn btn-success-outline" role="button" data-toggle="collapse" href="#klappe2" aria-expanded="false" aria-controls="klappe2">mehr</a>
+                         <div class="collapse p-t-1" id="klappe2">
+                             <p>Auch ich bin nur sichtbar, wenn der Button gedrückt wird</p>
+                         </div>
+                     </div>
+                 </div>
+                                 
+                </div>
+                  <div class="col-sm-6 col-md-3">
+                 <div class="card">
+                     <div class="card-block">
+                         <h4 class="card-title">Garten</h4>
+                         <h6 class="card-subtitle text-muted">Ich bin ein Untertitel</h6>
+                     </div>
+                     <img src="img/bauerngarten_kl.JPG" alt="garten" >
+                     <div class="card-block">
+                         <p class="card-text">Das ist nur ein kurzer Text damit hier etwas steht</p>
+                         <button type="button" class="btn btn-success-outline">mehr</button>
+                     </div>
+                 </div>
+                                 
+                </div>
+                   
+                    
+                </div>
+            </div>
+       
+         
+     </section>
+     <section id="tab">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-sm-offset-3">
+                      <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Vorname</th>
+                              <th>Nachname</th>
+                              <th>Benutzername</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr >
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Larry</td>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      
+                  </div>
+              </div>
+          </div>         
+                                 
+       </section>
+       <section id="responsive">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 p-b-2">
+                      <img src="img/bauerngarten.JPG" alt="bauerngarten" class="img-fluid">
+                </div>
+            </div>
+             
+              <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                      <h4>Ich bin eine mittelgroße Überschrift</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates alias, pariatur adipisci quasi praesentium facere, harum ipsam a officia, officiis quo! Numquam nesciunt odit quos dolorum eos, amet sequi molestiae.</p>
+                  </div>
+                    
+                  <div class="col-md-8 col-md-offset-2">
+                      <h4>Auch ich bin eine Überschrift</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates alias, pariatur adipisci quasi praesentium facere, harum ipsam a officia, officiis quo! Numquam nesciunt odit quos dolorum eos, amet sequi molestiae.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quibusdam asperiores repellendus quisquam veniam commodi, rem dolor repellat, omnis voluptate neque tempore dolores magni. Deleniti dolores quaerat placeat voluptas libero.</p>
+                  </div>    
+                  <div class="col-md-8 col-md-offset-2">
+                      <h4>Was Ihr könnt, kann ich auch</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates alias, pariatur adipisci quasi praesentium facere, harum ipsam a officia, officiis quo! Numquam nesciunt odit quos dolorum eos, amet sequi molestiae.</p>
+                  </div>
+                  </div>
+         </div>
+      </section>
+       
+    
+   
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+html, body{height: 100%;}
+img{max-width: 100%;
+    height: auto;
+}
+#cover{
+    background: url(../img/wiese2.jpg) center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    height:100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#titelzeile{
+    width: 100%;
+    background-color: rgba(9, 57, 11, 0.7);
+}
+.navbar{ background-color: rgba(9, 57, 11,0.9); }
+.dropdown-menu{background-color: rgba(9, 57, 11,0.9); }
+.dropdown-item{color:#fff;}
+#karten, #tab, #responsive{
+   padding-top:6.5rem; 
+    
+}
+footer{
+    width: 100%;
+     background-color: rgba(9, 57, 11, 0.7);
+    font-size: 0.8rem;
+    padding: 2.5rem 0;
+    
+}
+.list-unstyled a{
+    color:#fff;
+}
