@@ -4,9 +4,9 @@
 
 ## In this Respository I test techniques around html, css and 
 
-### bootstrap
+### Bootstrap
 ### Flexbox
-### Grid, ,  
+### Grid
 
 ---
 
