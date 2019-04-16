@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font: 100% sans-serif;
+      color: #442E2E;
+      background-color: #F9F7F3;
+    }
+
+    .container {
+      margin: 1em;
+      width: 450px;
+    }
+
+    .container p {
+      font-size: 3rem;
+    }
+
+    .container p:last-child {
+      font-size: 5rem;
+    }
+
+    .eins, .zwei, .drei {
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      color: white;
+    }
+
+    .eins {
+      width: 100px;
+      height: 200px;
+      background-color: #99B1D7;
+    }
+
+    .zwei {
+      width: 100px;
+      background-color: #456188;
+    }
+
+    .drei {
+      width: 250px;
+      background-color: #B04C80;
+    }
+
+    /* Flexbox-Darstellung */
+    .container {
+      border: 1px solid #222;
+      width: 300px;
+      float: left;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .flexstart {
+      align-items: flex-start;
+    }
+
+    .center {
+      align-items: center;
+    }
+
+    .flexend {
+      align-items: flex-end;
+    }
+
+    .baseline {
+      align-items: baseline;
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+
+<div class="container">
+  <p class="eins">1 </p>
+  <p class="zwei">2</p>
+  <p class="drei">3</p>
+</div>
+
+<div class="container flexstart">
+  <p class="eins">1 </p>
+  <p class="zwei">2</p>
+  <p class="drei">3</p>
+</div>
+
+<div class="container center">
+  <p class="eins">1 </p>
+  <p class="zwei">2</p>
+  <p class="drei">3</p>
+</div>
+
+<div class="container flexend">
+  <p class="eins">1 </p>
+  <p class="zwei">2</p>
+  <p class="drei">3</p>
+</div>
+<div class="container baseline">
+  <p class="eins">1 </p>
+  <p class="zwei">2</p>
+  <p class="drei">3</p>
+</div>
+</body>
+</html>

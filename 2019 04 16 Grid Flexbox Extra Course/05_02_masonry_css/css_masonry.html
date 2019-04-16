@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS only Masonry</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 150% sans-serif;
+      background: #ECF0F1;
+      color: #000;
+    }
+
+    .raster div {
+      background: #5abce7;
+      border-radius: 0.25rem;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .raster {
+      max-width: 900px;
+      margin: auto;
+      column-count: 3;
+      column-gap: 1.25rem;
+    }
+
+    .raster div {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 0.75rem;
+      padding: 1em;
+      border: 1px solid #333;
+    }
+    @media screen and (max-width: 500px) {
+      .raster {
+        column-count: 2;
+      }
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+  <div class="raster">
+    <div class="a">A<br>A<br>A</div>
+    <div class="b">B</div>
+    <div class="c">C<br>C</div>
+    <div class="d">D<br>D<br></div>
+    <div class="e">E</div>
+    <div class="f">F<br>F<br>F<br>F</div>
+    <div class="g">G</div>
+    <div class="h">H<br>H<br>H<br>H<br></div>
+    <div class="i">I</div>
+
+
+  </div>
+</body>
+
+</html>

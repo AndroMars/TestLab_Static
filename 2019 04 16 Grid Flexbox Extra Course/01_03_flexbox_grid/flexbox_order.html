@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font: 100% sans-serif;
+      color: #442E2E;
+    }
+
+    .container {
+      margin: 1em;
+      background-color: #F9F7F3;
+      border: 1px solid #222;
+    }
+
+    .container p {
+      font-size: 4rem;
+    }
+
+    .eins, .zwei, .drei {
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      color: white;
+    }
+    .eins {
+      width: 70px;
+      height: 200px;
+      background-color: #99B1D7;
+    }
+
+    .zwei {
+      width: 70px;
+      background-color: #456188;
+    }
+
+    .drei {
+      width: 70px;
+      background-color: #B04C80;
+    }
+    /* Flexbox-Darstellung */
+    .container {
+      width: 350px;
+      display: flex;
+    }
+    .eins {
+
+    }
+    .zwei {
+
+    }
+    .drei {
+      order: -1;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <p class="eins">1</p>
+  <p class="zwei">2</p>
+  <p class="drei">3</p>
+</div>
+
+</body>
+</html>

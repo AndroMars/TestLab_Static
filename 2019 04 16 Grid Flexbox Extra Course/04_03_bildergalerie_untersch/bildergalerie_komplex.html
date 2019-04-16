@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>Bildergalerie</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-auto-rows: 300px;
+      grid-auto-flow: dense;
+      margin: 1rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .breiter {
+      grid-column: span 2;
+    }
+
+    .hoeher {
+      grid-row: span 2;
+    }
+
+    .hoeher3 {
+      grid-row: span 3;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="bilder/bild_01.jpg" alt="Bild 1">
+  <img src="bilder/bild_02.jpg" alt="Bild 2">
+  <img class="hoeher" src="https://picsum.photos/600/300" alt="Bild">
+  <img class="breiter" src="https://picsum.photos/300/600" alt="Bild">
+  <img src="bilder/bild_04.jpg" alt="Bild 4">
+  <img src="bilder/bild_05.jpg" alt="Bild 5">
+  <img class="hoeher breiter" src="https://picsum.photos/600/600" alt="Bild">
+  <img src="bilder/bild_07.jpg" alt="Bild 7">
+  <img class="hoeher3" src="https://picsum.photos/900/300" alt="Bild">
+  <img src="bilder/bild_08.jpg" alt="Bild 8">
+  <img src="bilder/bild_09.jpg" alt="Bild 9">
+  <img class="hoeher" src="https://picsum.photos/600/300" alt="Bild">
+  <img src="bilder/bild_01.jpg" alt="Bild 1">
+  <img src="bilder/bild_03.jpg" alt="Bild 3">
+  <img src="bilder/bild_04.jpg" alt="Bild 4">
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gridlayout</title>
+	<link rel="stylesheet" href="grid_bs_raster.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font: 150% sans-serif;
+			background: #ECF0F1;
+			color: #000;
+
+		}
+		:root {
+			--hue: 180;
+		}
+		[class^=col]:nth-child(1) {
+			background-color: hsl(var(--hue), 100%, 30%);
+		}
+		[class^=col]:nth-child(2) {
+			background-color: hsl(var(--hue), 100%, 40%);
+		}
+		[class^=col]:nth-child(3) {
+			background-color: hsl(var(--hue), 100%, 50%);
+		}
+		[class^=col]:nth-child(4) {
+			background-color: hsl(var(--hue), 100%, 60%);
+		}
+		[class^=col]:nth-child(5) {
+			background-color: hsl(var(--hue), 100%, 50%);
+		}
+		[class^=col]:nth-child(6) {
+			background-color: hsl(var(--hue), 80%, 50%);
+		}
+		[class^=col]:nth-child(7) {
+			background-color: hsl(var(--hue), 60%, 50%);
+		}
+		[class^=col]:nth-child(8) {
+			background-color: hsl(var(--hue), 40%, 50%);
+		}
+		.raster {
+			margin-bottom: 1rem;
+		}
+
+	</style>
+
+</head>
+
+<body>
+<div class="raster">
+	<div class="col-1">A</div>
+	<div class="col-4">B</div>
+	<div class="col-4">C</div>
+	<div class="col-3">D</div>
+</div>
+
+<div class="raster">
+	<div class="col-4 col-md-3">A</div>
+	<div class="col-4 col-md-6">B</div>
+	<div class="col-4 col-md-3">C</div>
+</div>
+
+<div class="raster">
+	<div class="col-12 col-md-3">A</div>
+	<div class="col-12 col-md-6">B</div>
+	<div class="col-12 col-md-3">C</div>
+</div>
+
+<div class="raster">
+	<div class="col-1">Donaudampfschiffkapitänsmütze</div>
+	<div class="col-4">B</div>
+	<div class="col-4">C</div>
+	<div class="col-3">D</div>
+
+	<div class="col-2">A</div>
+	<div class="col-3">B</div>
+	<div class="col-3">C</div>
+	<div class="col-4">D</div>
+</div>
+
+
+</body>
+</html>

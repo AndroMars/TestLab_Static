@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>float</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      color: white;
+    }
+
+    section {
+      width: 500px;
+      border: 10px solid #41a8ff;
+    }
+
+    .eins {
+      width: 30%;
+      background-color: #B04C80;
+      float: left;
+      padding: 2em;
+    }
+
+    .zwei {
+      background-color: #456188;
+    }
+
+    hr {
+      clear: both;
+    }
+
+    .c .zwei {
+      float: right;
+      width: 70%;
+    }
+
+    .clearfix::after {
+      content:" ";
+      display:block;
+      clear:both;
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+<section class="c">
+  <div class="eins">Eins</div>
+  <div class="zwei">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+  </div>
+</section>
+<hr>
+<section class="c clearfix">
+  <div class="eins">Eins</div>
+  <div class="zwei">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+  </div>
+</section>
+
+</body>
+</html>

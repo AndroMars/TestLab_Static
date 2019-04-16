@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gridlayout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 1rem;
+      font: 120% sans-serif;
+      max-width: 80rem;
+      margin: auto;
+      background: #3c4aa7;
+
+    }
+
+    article {
+      background-color: #fff;
+      color: #e78035;
+      padding: 1.25rem;
+      background-clip: border-box;
+      border: 1px solid #0000001a;
+      border-radius: .25rem;
+    }
+
+    article h2 {
+      margin-top: 0;
+      margin-bottom: .75rem;
+    }
+
+    article p {
+      margin-top: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 1rem;
+    }
+
+    article {
+      grid-column: span 3;
+    }
+
+
+    @media all and (max-width: 50em) {
+      article {
+        grid-column: span 4;
+      }
+    }
+
+    @media all and (max-width: 30em) {
+      article {
+        grid-column: span 6;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h2>card</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+  <article>
+    <h2>card</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+  <article>
+    <h2>card</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+  <article>
+    <h2>card</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+  <article>
+    <h2>card</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+  <article>
+    <h2>card</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+  <article>
+    <h2>card</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+  <article>
+    <h2>card</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+  <article>
+    <h2>card</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</article>
+</body>
+
+</html>

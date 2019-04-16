@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox</title>
+  <style>
+    html {
+      font: 100% sans-serif;
+      background: #000;
+    }
+
+    header, nav, aside, footer, article {
+      background: #444;
+      color: white;
+      border-radius: 0.8em;
+      margin: 0.8em;
+      padding: 1em;
+    }
+
+    h1, h2 {
+      font-size: 2rem;
+    }
+    /* 1. Reihenfolge: article soll bei großen Screens in der Mitte dargestellt werden
+       2. Angepasste Darstellung auf kleinen Screens: Elemente sollen untereinander dargestellt werden.
+       3. Kleine Screens: Die Reihenfolge soll wieder der Quellcode-Reihenfolge entsprechen
+    */
+    /* Flexbox aktivieren für main */
+    main {
+      display: flex;
+    }
+    /* Reihenfolge verändern */
+    main > article {
+      flex: 1;
+      min-height: 15em;
+    }
+
+    main > nav {
+      width: 15em;
+      order: -1;
+    }
+
+    main > aside {
+      width: 15em;
+    }
+
+    @media all and (max-width: 37.5em) {
+      /* Darstellung untereinander  */
+      main {
+        display: block;
+      }
+
+      main > article, main > nav, main > aside {
+        /* Reihenfolge wieder auf Standard setzen */
+        
+        width: auto;
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<header><h1>header</h1></header>
+<main>
+  <article><h2>article</h2></article>
+  <nav><h2>nav</h2></nav>
+  <aside><h2>aside</h2></aside>
+</main>
+<footer><h2>footer</h2></footer>
+
+
+</body>
+</html>

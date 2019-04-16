@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font: 120% sans-serif;
+      background: #999;
+      display: grid;
+      grid-template-areas:
+      "nav header header"
+      "nav article aside"
+      "footer footer aside";
+      grid-template-columns: 7em 1fr 7em;
+      grid-template-rows: minmax(100px, min-content) 1fr minmax(100px, min-content);
+    }
+
+    article,
+    nav,
+    aside,
+    header,
+    footer {
+      margin: 0.3em;
+      padding: 0.3em;
+      border: 1px solid #cccc33;
+      border-radius: 0.5em;
+    }
+
+    header,
+    footer {
+      background: #ffeebb;
+    }
+
+    article {
+      background: #dddd88;
+      grid-area: article;
+    }
+
+    nav {
+      background: #ccccff;
+      grid-area: nav;
+    }
+
+    aside {
+      background: #ccccff;
+      grid-area: aside;
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+
+    @media all and (max-width: 55em) {
+      body {
+        grid-template-areas:
+           "header nav"
+           "article nav"
+           "aside aside"
+           "footer footer";
+        grid-template-columns: 3fr 1fr;
+      }
+    }
+
+    @media all and (max-width: 40em) {
+      body {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>header</h2></header>
+  <article>
+    <h2>article</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+      takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+      et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</article>
+  <aside>
+    <h2>aside</h2></aside>
+  <nav>
+    <h2>nav</h2></nav>
+
+  <footer>
+    <h2>footer</h2></footer>
+</body>
+
+</html>

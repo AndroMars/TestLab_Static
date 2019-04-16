@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gridlayout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+      font: 120% sans-serif;
+      background: #ECF0F1;
+      color: #000;
+      height: 100vh;
+      max-width: 550px;
+      text-align: center;
+      margin: auto;
+      /* Raster  5 Zeilen
+     1. Zeile 3 Teile des übrig bleibenden Platzes
+     2. Zeile mindestens 150px, maximal 300px
+     3. Zeile die normale Höhe, die das Element braucht
+     4. Zeile: die normale Höhe, die das Element braucht
+     5. Zeile: einen Teil des übrig bleibenden Platzes
+      */
+      display: grid;
+      grid-template-rows: 3fr minmax(150px, 300px) auto auto 1fr;
+
+
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+    }
+
+    img {
+      grid-row: 2;
+      margin: auto;
+      max-width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    h1 {
+       grid-row: 3;
+    }
+
+    nav {
+       grid-row: 4;
+    }
+
+    nav ul,
+    nav li {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!--siehe http://labs.jensimmons.com/2017/01-008C.html -->
+  <img src="bilder/haus.png" alt="Haus">
+  <h1>Überschrift</h1>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Service</li>
+      <li>Kontakt</li>
+    </ul>
+  </nav>
+</body>
+</html>

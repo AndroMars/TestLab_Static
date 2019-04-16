@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid</title>
+  <style>
+    html {
+      font: 100% sans-serif;
+      background: #000;
+    }
+
+    header,
+    nav,
+    aside,
+    footer,
+    article {
+      background: #444;
+      color: white;
+      border-radius: 0.8em;
+      margin: 0.8em;
+      padding: 1em;
+    }
+
+    h1,
+    h2 {
+      font-size: 2rem;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: 15em 1fr 15em;
+      grid-template-areas:
+        "header header header"
+        "nav article aside"
+        "footer footer footer";
+    }
+    article {
+      grid-area: article;
+      min-height: 15em;
+    }
+    nav {
+      grid-area: nav;
+    }
+    aside {
+      grid-area: aside;
+    }
+    header {
+      grid-area: header;
+    }
+    footer {
+      grid-area: footer;
+    }
+    @media all and (max-width: 45em) {
+      body {
+        grid-template-areas:
+          "header article"
+          "nav article"
+          "aside article"
+          "footer footer";
+          grid-template-columns: 15em 1fr;
+      }
+
+    }
+
+    @media all and (max-width: 37.5em) {
+      body {
+         display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>header</h1></header>
+  <article>
+    <h2>article</h2></article>
+  <nav>
+    <h2>nav</h2></nav>
+  <aside>
+    <h2>aside</h2></aside>
+  <footer>
+    <h2>footer</h2></footer>
+
+</body>
+
+</html>

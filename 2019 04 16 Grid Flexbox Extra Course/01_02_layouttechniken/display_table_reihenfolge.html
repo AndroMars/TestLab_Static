@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>display: table - Reihenfolge ändern</title>
+
+  <style>
+    body {
+      font: 120% sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+      color: white;
+    }
+
+    .eins {
+      background-color: #99B1D7;
+    }
+
+    .zwei {
+      background-color: #456188;
+    }
+
+    .drei {
+      background-color: #B04C80;
+    }
+
+    .vier {
+      background-color: #031837;
+    }
+
+    .container {
+      display: table;
+      width: 100%;
+    }
+
+    p {
+      display: table-cell;
+    }
+
+    p span {
+      display: block;
+      padding: 2em;
+    }
+
+    @media screen and (max-width: 28em) {
+      .vier {
+        display: table-header-group;
+        width: 100%;
+      }
+
+      .eins {
+        display: table-footer-group;
+      }
+
+      .drei {
+        display: table-caption;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <p class="eins"><span>Eins</span></p>
+  <p class="zwei"><span>Zwei</span></p>
+  <p class="drei"><span>Drei</span></p>
+  <p class="vier"><span>Vier</span></p>
+</div>
+
+</body>
+</html>
