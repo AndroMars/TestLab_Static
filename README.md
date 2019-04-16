@@ -1,11 +1,11 @@
-Web Developer Lab
-===
+# Web Developer Lab
 
 ---
 
-In this Respository I test techniques around html, css and bootstrap
+## In this Respository I test techniques around html, css and 
+
+Grid, Flexbox, bootstrap
 
 ---
 
 
-Probably I´ll add PhP later
