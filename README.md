@@ -2,7 +2,7 @@
 
 ---
 
-## In this Respository I test techniques around html and css
+## In this respository I test techniques around html and css
 
 ### Bootstrap
 ### Flexbox
