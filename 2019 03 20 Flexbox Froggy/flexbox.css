@@ -1,0 +1,32 @@
+/*Willkommen bei Flexbox Froggy,
+einem Spiel,
+in dem du Froggy und seinen Freunden hilfst,
+indem du CSS-Code schreibst ! Führe diesen Frosch zum Seerosenblatt auf der rechten Seite,
+indem du die justify-content-Eigenschaft verwendest,
+die Elemente horizontal ausrichtet,
+und die folgenden Werte akzeptiert: flex-start: Elemente an der linken Seite des Containers ausrichten. flex-end: Elemente an der rechten Seite des Containers ausrichten. center: Elemente an der Mitte des Containers ausrichten. space-between: Elemente mit gleichem Innenabstand ausrichten. space-around: Elemente mit gleichem Außenabstand ausrichten. Mit justify-content: flex-end;
+
+bewegst du den Frosch beispielsweise nach rechts. */
+
+
+[01] #pond {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Use justify-content again to help these frogs get to their lilypads. Remember that this CSS property aligns items horizontally and accepts the following values: flex-start: Items align to the left side of the container. flex-end: Items align to the right side of the container. center: Items align at the center of the container. space-between: Items display with equal spacing between them. space-around: Items display with equal spacing around them. */
+
+[02] #pond {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+Help all three frogs find their lilypads just by using justify-content. This time,
+the lilypads have lots of space all around them. If you find yourself forgetting the possible values for a property,
+you can hover over the property name to view them. Try hovering over justify-content.  */
+
+[03]#pond {
+    display: flex;
+    justify-content: space-around;
+}
