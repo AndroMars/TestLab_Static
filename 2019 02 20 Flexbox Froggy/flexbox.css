@@ -179,7 +179,51 @@ wrap-reverse: Elemente in umgekehrter Reihenfolge auf zusätzliche Zeilen umbrec
 
 /* Die beiden Eigenschaften flex-direction und flex-wrap werden so oft gemeinsam verwendet, dass sie über die Kurzschreibweise flex-flow kombiniert werden können. Diese akzeptiert, durch ein Leerzeichen getrennt, die Werte beider Eigenschaften. Du kannst zum Beispiel flex-flow: row wrap benutzen, um umbrechende Zeilen zu verwenden. Versuche das vorige Level einmal mit flex-flow. */
 
-#pond {
+[19] #pond {
     display: flex;
     flex-flow: column wrap;
 }
+
+/* Die Frösche sind über den gesamten Teich verteilt, aber die Seerosenblätter befinden sich alle am oberen Ende. Du kannst align-content verwenden, um festzulegen, wie der Abstand zwischen mehreren Zeilen aussehen soll. Diese Eigenschaft akzeptiert die folgenden Werte:
+
+flex-start: Zeilen oben im Container ausrichten.
+flex-end: Zeilen unten im Container ausrichten.
+center: Zeilen in der Mitte des Containers ausrichten.
+space-between: Zeilen mit gleichmäßigem Innenabstand anordnen.
+space-around: Zeilen mit gleichmäßigem Außenabstand anordnen.
+stretch: Zeilen strecken, um den Container auszufüllen.
+Das kann etwas verwirrend sein, aber align-content beeinflusst den Abstand zwischen den Zeilen, wobei align-items festlegt, wie alle Elemente als Ganzes im Container angeordnet werden. Gibt es nur eine Zeile, so hat align-content keine Auswirkung. */
+
+[21] #pond {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* Der Strom hat die Seerosenblätter nach unten getrieben. Benutze align-content, um die Frösche dorthin zu führen. */
+
+[22] #pond {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+/* Die Frösche haben eine Party gefeiert, aber nun ist es Zeit, nach Hause zu gehen. Benutze eine Kombination von flex-direction und align-content, um sie zu ihren Seerosenblättern zu führen. */
+
+[23] #pond {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center;
+}
+
+/* Bringe die Frösche ein letztes Mal mit allen gelernten CSS-Eigenschaften nach Hause:
+
+justify-content
+align-items
+flex-direction
+order
+align-self
+flex-wrap
+flex-flow
+align-content */
